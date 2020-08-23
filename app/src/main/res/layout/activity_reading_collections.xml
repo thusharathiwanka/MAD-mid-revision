@@ -8,22 +8,24 @@
     tools:context=".ReadingCollectionsActivity">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bookBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:text="@string/books"
-        android:textSize="24sp"
         android:background="#15bdb1"
-        android:textColor="#ffffff"/>
+        android:onClick="passClickedBtn"
+        android:text="@string/books"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/paperBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
-        android:text="@string/paper_article"
-        android:textSize="24sp"
         android:background="#ff5b61"
-        android:textColor="#ffffff"/>
+        android:onClick="passClickedBtn"
+        android:text="@string/paper_article"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
 </LinearLayout>

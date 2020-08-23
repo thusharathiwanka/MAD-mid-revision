@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class ReadingCollectionsActivity extends AppCompatActivity {
@@ -17,5 +19,24 @@ public class ReadingCollectionsActivity extends AppCompatActivity {
         String name = intent.getStringExtra("READER'S_NAME");
 
         Toast.makeText(getApplicationContext(), "Welcome " + name + "\nPlease enter what you read.", Toast.LENGTH_SHORT).show();
+    }
+
+    public void passClickedBtn(View view) {
+        String status;
+        Intent intent = new Intent(getApplicationContext(), AddReading.class);
+
+        if(view.getId() == R.id.bookBtn) {
+            status = "1";
+            intent.putExtra("READING_TYPE", status);
+            System.out.println(status);
+        } else if(view.getId() == R.id.paperBtn) {
+            status = "0";
+            intent.putExtra("READING_TYPE", status);
+            startActivity(intent);
+            System.out.println(status);
+        } else {
+            System.out.println("Invalid Button");
+        }
+        startActivity(intent);
     }
 }

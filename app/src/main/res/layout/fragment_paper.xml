@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentPaper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaperFragment"
-    android:background="#ff5b61">
+    android:background="#ff5b61"
+    tools:context=".PaperFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
         android:text="@string/paper_article"
         android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_marginTop="20sp"/>
+        android:textSize="24sp" />
 
 </FrameLayout>
