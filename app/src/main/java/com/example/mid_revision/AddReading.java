@@ -76,7 +76,7 @@ public class AddReading extends AppCompatActivity {
             dialog = builder.create();
             dialog.show();
         } else {
-            Toast.makeText(getApplicationContext(), "Reader's name cannot be empty !", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Inputs cannot be empty !", Toast.LENGTH_LONG).show();
         }
     }
 }
