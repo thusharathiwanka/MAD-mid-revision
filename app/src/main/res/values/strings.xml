@@ -3,4 +3,9 @@
     <string name="reader_s_name">Reader\'s Name</string>
     <string name="name">Name</string>
     <string name="todo">TODO</string>
+    <string name="ok">OK</string>
+    <string name="books">BOOKS</string>
+    <string name="paper_article">PAPER ARTICLE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
