@@ -34,7 +34,7 @@ public class AddReading extends AppCompatActivity {
         if(status != null) {
             if(status.equals("1")) {
                 author.setText("Author");
-                title.setText("Book Titile");
+                title.setText("Book Title");
 
                 fragment1 = new BookFragment();
                 FragmentManager fm = getSupportFragmentManager();
