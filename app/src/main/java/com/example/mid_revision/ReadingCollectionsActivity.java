@@ -21,21 +21,17 @@ public class ReadingCollectionsActivity extends AppCompatActivity {
     }
 
     public void passClickedBtn(View view) {
-        String status;
+        String status = "";
         Intent intent = new Intent(getApplicationContext(), AddReading.class);
 
         if(view.getId() == R.id.bookBtn) {
             status = "1";
-            intent.putExtra("READING_TYPE", status);
-            System.out.println(status);
         } else if(view.getId() == R.id.paperBtn) {
             status = "0";
-            intent.putExtra("READING_TYPE", status);
-            startActivity(intent);
-            System.out.println(status);
         } else {
             System.out.println("Invalid Button");
         }
+        intent.putExtra("READING_TYPE", status);
         startActivity(intent);
     }
 }
